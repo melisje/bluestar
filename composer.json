@@ -1,0 +1,29 @@
+{
+    "name": "melt/bluestar",
+    "description": "This package is for demo",
+    "keywords": [],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jef Melis",
+            "email": "jef.melis@melit.be"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^7.24",
+        "laravel/ui": "^2.1",
+        "php": ">=7.2.0",
+        "illuminate/config": "~5.0",
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Melit\\BlueStar\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
