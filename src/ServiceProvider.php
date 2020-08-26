@@ -50,21 +50,21 @@ class ServiceProvider extends LaravelServiceProvider {
 
         $configPath = __DIR__ . '/../config/bluestar.php';
 
-        $this->publishes([$configPath => config_path('packagename.php')]);
+        $this->publishes([$configPath => config_path('bluestar.php')]);
 
-        $this->mergeConfigFrom($configPath, 'packagename');
+        $this->mergeConfigFrom($configPath, 'bluestar');
     }
 
     private function handleTranslations() {
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'packagename');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'bluestar');
     }
 
     private function handleViews() {
 
-        $this->loadViewsFrom(__DIR__.'/../views', 'packagename');
+        $this->loadViewsFrom(__DIR__.'/../views', 'bluestar');
 
-        $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/packagename')]);
+        $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/bluestar')]);
     }
 
     private function handleMigrations() {
